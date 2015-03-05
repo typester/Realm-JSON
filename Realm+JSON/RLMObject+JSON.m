@@ -349,7 +349,7 @@ static NSString *MCTypeStringFromPropertyKey(Class class, NSString *key) {
 		scanner.charactersToBeSkipped = set;
 		[scanner scanUpToCharactersFromSet:set intoString:NULL];
 		[scanner scanUpToCharactersFromSet:set intoString:&string];
-		return NSClassFromString(string);
+        return [RLMSchema classForString:string];
 	}
 	return nil;
 }
