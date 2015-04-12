@@ -7,6 +7,8 @@
 //
 
 #import "RLMObject+JSON.h"
+#import <Realm/RLMProperty.h>
+#import <Realm/RLMObjectSchema.h>
 
 // RLMSchema private interface
 @interface RLMSchema ()
