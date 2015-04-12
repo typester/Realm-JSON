@@ -70,7 +70,7 @@ static NSString *MCTypeStringFromPropertyKey(Class class, NSString *key) {
 	return [self createOrUpdateInRealm:realm withObject:[self mc_createObjectFromJSONDictionary:dictionary]];
 }
 
-+ (instancetype)objectInRealm:(RLMRealm *)realm withPrimaryKeyValue:(id)primaryKeyValue {
++ (instancetype)findInRealm:(RLMRealm *)realm withPrimaryKeyValue:(id)primaryKeyValue {
 	NSString *primaryKey = nil;
 	id value = primaryKeyValue;
 
